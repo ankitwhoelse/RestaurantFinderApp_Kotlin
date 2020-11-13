@@ -20,12 +20,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 
-class MapsFragment : Fragment(), LocationListener{
-
-    var lat: Double = 0.0
-    var lng: Double = 0.0
-
-
+class MapsFragment : Fragment(){
 
     private val callback = OnMapReadyCallback { googleMap ->
         /**
@@ -56,11 +51,6 @@ class MapsFragment : Fragment(), LocationListener{
         super.onViewCreated(view, savedInstanceState)
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
         mapFragment?.getMapAsync(callback)
-    }
-
-    override fun onLocationChanged(location: Location) {
-        lat = location.latitude
-        lng = location.longitude
     }
 
 }
