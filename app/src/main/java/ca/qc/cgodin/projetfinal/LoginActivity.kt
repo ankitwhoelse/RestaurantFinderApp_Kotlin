@@ -1,5 +1,6 @@
 package ca.qc.cgodin.projetfinal
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.findNavController
@@ -11,6 +12,9 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        bottomNavigationView.setupWithNavController(navHostFragment.findNavController())
+        btnLogin.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -1,6 +1,9 @@
 <resources>
-    <string name="app_name">ProjetFinal</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">Projet Final</string>
+
+    <string name="login_text">Login</string>
+
+
     <string name="map_text">Carte</string>
     <string name="recherche_text">Recherche</string>
     <string name="favoris_text">Favoris</string>
