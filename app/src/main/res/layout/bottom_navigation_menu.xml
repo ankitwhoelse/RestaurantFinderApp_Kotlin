@@ -5,7 +5,12 @@
     android:layout_height="wrap_content">
 
     <item
-        android:id="@+id/mapFragment"
+        android:id="@+id/listeFragment"
+        android:icon="@drawable/ic_location"
+        android:title="@string/liste_text" />
+
+    <item
+        android:id="@+id/mapsFragment"
         android:icon="@drawable/ic_map"
         android:title="@string/map_text" />
 
@@ -18,4 +23,5 @@
         android:id="@+id/favoriteFragment"
         android:icon="@drawable/ic_favorite"
         android:title="@string/favoris_text" />
+
 </menu>

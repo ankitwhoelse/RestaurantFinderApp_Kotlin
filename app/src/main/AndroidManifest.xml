@@ -13,7 +13,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InscriptionActivity"></activity>
         <activity
             android:name=".LoginActivity"
             android:label="@string/login_text">
@@ -23,9 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:parentActivityName=".LoginActivity"></activity>
+        <activity android:name=".MainActivity"
+            android:parentActivityName=".LoginActivity">
+
+        </activity>
     </application>
 
 </manifest>

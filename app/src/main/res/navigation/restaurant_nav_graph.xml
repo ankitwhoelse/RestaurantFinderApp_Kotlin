@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/restaurant_nav_graph"
-    app:startDestination="@id/mapFragment">
+    app:startDestination="@id/listeFragment">
 
     <fragment
         android:id="@+id/restaurantFragment"
@@ -20,10 +20,10 @@
             app:destination="@id/restaurantFragment" />
     </fragment>
     <fragment
-        android:id="@+id/mapFragment"
-        android:name="ca.qc.cgodin.projetfinal.MapFragment"
+        android:id="@+id/mapsFragment"
+        android:name="ca.qc.cgodin.projetfinal.MapsFragment"
         android:label="fragment_map"
-        tools:layout="@layout/fragment_map" >
+        tools:layout="@layout/fragment_maps" >
         <action
             android:id="@+id/action_mapFragment_to_restaurantFragment"
             app:destination="@id/restaurantFragment" />
@@ -35,6 +35,15 @@
         tools:layout="@layout/fragment_recherche" >
         <action
             android:id="@+id/action_rechercheFragment_to_restaurantFragment"
+            app:destination="@id/restaurantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listeFragment"
+        android:name="ca.qc.cgodin.projetfinal.ListeFragment"
+        android:label="fragment_liste"
+        tools:layout="@layout/fragment_liste" >
+        <action
+            android:id="@+id/action_listeFragment_to_restaurantFragment"
             app:destination="@id/restaurantFragment" />
     </fragment>
 </navigation>
