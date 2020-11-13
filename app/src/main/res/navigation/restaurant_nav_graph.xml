@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/restaurant_nav_graph"
+    app:startDestination="@id/mapFragment">
+
+    <fragment
+        android:id="@+id/restaurantFragment"
+        android:name="ca.qc.cgodin.projetfinal.RestaurantFragment"
+        android:label="fragment_restaurant"
+        tools:layout="@layout/fragment_restaurant" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="ca.qc.cgodin.projetfinal.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_restaurantFragment"
+            app:destination="@id/restaurantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="ca.qc.cgodin.projetfinal.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_mapFragment_to_restaurantFragment"
+            app:destination="@id/restaurantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rechercheFragment"
+        android:name="ca.qc.cgodin.projetfinal.RechercheFragment"
+        android:label="fragment_recherche"
+        tools:layout="@layout/fragment_recherche" >
+        <action
+            android:id="@+id/action_rechercheFragment_to_restaurantFragment"
+            app:destination="@id/restaurantFragment" />
+    </fragment>
+</navigation>
