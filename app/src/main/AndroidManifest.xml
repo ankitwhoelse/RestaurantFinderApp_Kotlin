@@ -20,7 +20,8 @@
 
         <activity
             android:name=".LoginActivity"
-            android:label="@string/login_text">
+            android:label="@string/login_text"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
