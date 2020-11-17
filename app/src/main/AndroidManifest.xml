@@ -16,7 +16,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBH2wsNqYjNqGLHi3Keo-CWobaboMd88d4"/>
+            android:value="AIzaSyBIvtISkH61zrhZJvJkp7a3sud6sjzzsnM"/>
 
         <activity
             android:name=".LoginActivity"
@@ -30,6 +30,17 @@
         </activity>
         <activity android:name=".MainActivity"
             android:parentActivityName=".LoginActivity">
+
+        </activity>
+        <activity
+            android:name=".InscriptionActivity"
+            android:label="Créer un compte"
+            android:windowSoftInputMode="adjustResize">>
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
 
         </activity>
     </application>
