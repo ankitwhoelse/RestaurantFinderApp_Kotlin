@@ -95,19 +95,12 @@
             android:layout_height="48dp"
             android:layout_marginBottom="30dp"
             android:background="@drawable/button_background"
-            android:text="Se connecter"
+            android:text="Créer un compte"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="21sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
-            android:text="Créer un compte"
-            android:textColor="@color/white"
-            android:textSize="21sp" />
+
     </LinearLayout>
 
 </RelativeLayout>

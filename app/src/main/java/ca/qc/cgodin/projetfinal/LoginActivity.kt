@@ -19,5 +19,9 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+        btnCreerCompte.setOnClickListener {
+            val intent = Intent(this, InscriptionActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
