@@ -1,13 +1,9 @@
 package ca.qc.cgodin.projetfinal
 
-import android.content.Context
-import android.location.Location
-import android.location.LocationListener
-import android.location.LocationManager
-import android.location.LocationProvider
 import androidx.fragment.app.Fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,8 +15,12 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import kotlin.properties.Delegates
 
 class MapsFragment : Fragment(){
+
+    public var myLongitude: Double = MainActivity.myLongitude
+    public var myLatitude: Double = MainActivity.myLatitude
 
     private val callback = OnMapReadyCallback { googleMap ->
         /**
@@ -33,9 +33,10 @@ class MapsFragment : Fragment(){
          * user has installed Google Play services and returned to the app.
          */
 
-        val mtl = LatLng(45.501, -73.567)
-        googleMap.addMarker(MarkerOptions().position(mtl).title("Vous etes ici"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(mtl))
+        val myLocation = LatLng(myLatitude, myLongitude)
+        Log.i("test", "Current position(GG): $myLatitude/$myLongitude")
+        googleMap.addMarker(MarkerOptions().position(myLocation).title("Vous etes ici"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation))
     }
 
 
