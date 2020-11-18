@@ -5,4 +5,18 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="white">#FFFFFF</color>
     <color name="hint_color">#80FFFFFF</color>
+
+    <!-- Colors -->
+    <color name="ebony">#281C2D</color>
+    <color name="charcoal">#323E42</color>
+    <color name="blue_gray">#8B9FB0</color>
+    <color name="indigo">#4F0B66</color>
+    <color name="violet">#7954A1</color>
+    <color name="purple">#C55FFC</color>
+    <color name="orchid">#744872</color>
+    <color name="purple_haze">#EFDCF9</color>
+    <color name="champagne">#EEDFD0</color>
+    <color name="cream">#F2EDDC</color>
+    <color name="desert_sun">#D9992D</color>
+
 </resources>

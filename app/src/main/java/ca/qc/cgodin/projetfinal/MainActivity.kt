@@ -64,4 +64,6 @@ class MainActivity : AppCompatActivity() {
         var myLatitude:Double = 0.1
         var myLongitude: Double = 0.1
     }
+
+
 }
