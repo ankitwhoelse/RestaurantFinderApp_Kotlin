@@ -2,7 +2,7 @@
     <string name="app_name">Projet Final</string>
 
     <string name="login_text">Login</string>
-
+    <string name="hello_blank_fragment">helo</string>
 
     <string name="liste_text">Liste</string>
     <string name="map_text">Carte</string>
@@ -10,5 +10,6 @@
     <string name="favoris_text">Favoris</string>
     <string name="restaurant_text">Restaurant</string>
 
-    <string name="hello_blank_fragment">helo</string>
+    <string name="distance_hint">"  Distance (Km)"</string>
+
 </resources>
