@@ -19,7 +19,7 @@
             android:value="AIzaSyBIvtISkH61zrhZJvJkp7a3sud6sjzzsnM"/>
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.LoginActivity"
             android:label="@string/login_text"
             android:windowSoftInputMode="adjustResize">
 
@@ -29,12 +29,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
-            android:parentActivityName=".LoginActivity">
+        <activity android:name=".ui.MainActivity"
+            android:parentActivityName=".ui.LoginActivity">
 
         </activity>
         <activity
-            android:name=".InscriptionActivity"
+            android:name=".ui.InscriptionActivity"
             android:label="Créer un compte"
             android:windowSoftInputMode="adjustResize">
 

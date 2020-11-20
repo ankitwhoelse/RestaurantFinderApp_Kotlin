@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/restaurantFragment"
-        android:name="ca.qc.cgodin.projetfinal.RestaurantFragment"
+        android:name="ca.qc.cgodin.projetfinal.ui.fragments.RestaurantFragment"
         android:label="fragment_restaurant"
         tools:layout="@layout/fragment_restaurant" />
     <fragment
         android:id="@+id/favoriteFragment"
-        android:name="ca.qc.cgodin.projetfinal.FavoriteFragment"
+        android:name="ca.qc.cgodin.projetfinal.ui.fragments.FavoriteFragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" >
         <action
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/mapsFragment"
-        android:name="ca.qc.cgodin.projetfinal.MapsFragment"
+        android:name="ca.qc.cgodin.projetfinal.ui.fragments.MapsFragment"
         android:label="fragment_map"
         tools:layout="@layout/fragment_maps" >
         <action
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/rechercheFragment"
-        android:name="ca.qc.cgodin.projetfinal.RechercheFragment"
+        android:name="ca.qc.cgodin.projetfinal.ui.fragments.RechercheFragment"
         android:label="fragment_recherche"
         tools:layout="@layout/fragment_recherche" >
         <action
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/listeFragment"
-        android:name="ca.qc.cgodin.projetfinal.ListeFragment"
+        android:name="ca.qc.cgodin.projetfinal.ui.fragments.ListeFragment"
         android:label="fragment_liste"
         tools:layout="@layout/fragment_liste" >
         <action

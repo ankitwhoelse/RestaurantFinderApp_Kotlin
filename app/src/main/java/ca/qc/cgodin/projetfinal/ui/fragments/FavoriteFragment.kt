@@ -1,9 +1,7 @@
-package ca.qc.cgodin.projetfinal
+package ca.qc.cgodin.projetfinal.ui.fragments
 
-import android.content.Intent
-import android.os.Bundle
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.fragment_favorite.*
+import ca.qc.cgodin.projetfinal.R
 
 class FavoriteFragment : Fragment(R.layout.fragment_restaurant) {
 

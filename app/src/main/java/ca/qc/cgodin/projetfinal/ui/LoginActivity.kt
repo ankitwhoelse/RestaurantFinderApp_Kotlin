@@ -1,10 +1,9 @@
-package ca.qc.cgodin.projetfinal
+package ca.qc.cgodin.projetfinal.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.setupWithNavController
+import ca.qc.cgodin.projetfinal.R
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {

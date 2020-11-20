@@ -1,11 +1,8 @@
-package ca.qc.cgodin.projetfinal
+package ca.qc.cgodin.projetfinal.ui.fragments
 
 import android.graphics.*
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import ca.qc.cgodin.projetfinal.R
 
 
 class RestaurantFragment : Fragment(R.layout.fragment_restaurant) {

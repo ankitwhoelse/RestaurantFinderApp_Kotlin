@@ -1,4 +1,4 @@
-package ca.qc.cgodin.projetfinal
+package ca.qc.cgodin.projetfinal.ui.fragments
 
 import androidx.fragment.app.Fragment
 
@@ -7,20 +7,21 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.google.android.gms.location.LocationServices
+import ca.qc.cgodin.projetfinal.R
+import ca.qc.cgodin.projetfinal.ui.MainActivity
 
 import com.google.android.gms.maps.CameraUpdateFactory
-import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import kotlin.properties.Delegates
 
 class MapsFragment : Fragment(){
 
-    public var myLongitude: Double = MainActivity.myLongitude
-    public var myLatitude: Double = MainActivity.myLatitude
+    public var myLongitude: Double =
+        MainActivity.myLongitude
+    public var myLatitude: Double =
+        MainActivity.myLatitude
 
     private val callback = OnMapReadyCallback { googleMap ->
         /**

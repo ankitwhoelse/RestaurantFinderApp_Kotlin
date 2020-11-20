@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_2"
-    tools:context=".RestaurantFragment">
+    tools:context=".ui.fragments.RestaurantFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -22,8 +22,7 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:scaleType="fitCenter"
-            android:src="@drawable/code_android_logo" />
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:id="@+id/tvNameResto"
