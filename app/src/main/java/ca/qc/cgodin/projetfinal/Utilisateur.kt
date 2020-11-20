@@ -11,10 +11,12 @@ data class Utilisateur(
     @ColumnInfo(name="id")
     val id:Int,
     @ColumnInfo(name = "email")
-    val firstName: String,
+    val email: String,
     @ColumnInfo(name = "UserName")
-    val lastName: String,
+    val UserName: String,
     @ColumnInfo(name = "Password")
-    val phoneNumber: String
+    val password: String,
+    @ColumnInfo(name = "Restaurants")
+    val restaurants: List<Result>
 
 )
