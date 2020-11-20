@@ -1,4 +1,4 @@
-package ca.qc.cgodin.projetfinal.models
+package ca.qc.cgodin.projetfinal
 
 data class Result(
     val business_status: String,

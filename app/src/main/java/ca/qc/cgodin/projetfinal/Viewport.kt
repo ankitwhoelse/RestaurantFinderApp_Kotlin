@@ -1,4 +1,4 @@
-package ca.qc.cgodin.projetfinal.models
+package ca.qc.cgodin.projetfinal
 
 data class Viewport(
     val northeast: Northeast,
