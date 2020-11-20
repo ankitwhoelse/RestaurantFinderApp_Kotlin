@@ -1,6 +1,6 @@
 package ca.qc.cgodin.projetfinal.api
 
-import ca.qc.cgodin.projetfinal.RestaurantResponse
+import ca.qc.cgodin.projetfinal.models.RestaurantResponse
 import ca.qc.cgodin.projetfinal.util.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET

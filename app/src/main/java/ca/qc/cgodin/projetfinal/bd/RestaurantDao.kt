@@ -2,7 +2,7 @@ package ca.qc.cgodin.projetfinal.bd
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import ca.qc.cgodin.projetfinal.Restaurant
+import ca.qc.cgodin.projetfinal.models.Restaurant
 
 @Dao
 interface RestaurantDao {

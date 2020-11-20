@@ -1,4 +1,6 @@
-package ca.qc.cgodin.projetfinal
+package ca.qc.cgodin.projetfinal.models
+
+import ca.qc.cgodin.projetfinal.models.Restaurant
 
 data class RestaurantResponse(
     val html_attributions: List<Any>,

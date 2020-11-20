@@ -1,7 +1,11 @@
-package ca.qc.cgodin.projetfinal
+package ca.qc.cgodin.projetfinal.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import ca.qc.cgodin.projetfinal.models.Geometry
+import ca.qc.cgodin.projetfinal.models.OpeningHours
+import ca.qc.cgodin.projetfinal.models.Photo
+import ca.qc.cgodin.projetfinal.models.PlusCode
 
 @Entity(
     tableName = "restaurants"

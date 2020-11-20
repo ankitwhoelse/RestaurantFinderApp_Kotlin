@@ -1,4 +1,4 @@
-package ca.qc.cgodin.projetfinal
+package ca.qc.cgodin.projetfinal.models
 
 data class Northeast(
     val lat: Double,
