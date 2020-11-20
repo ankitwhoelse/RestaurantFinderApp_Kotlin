@@ -3,8 +3,10 @@ package ca.qc.cgodin.projetfinal
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import ca.qc.cgodin.projetfinal.models.Restaurant
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
+
 @Entity(tableName = "Users_table")
 data class Utilisateur(
     @PrimaryKey(autoGenerate = true)
@@ -17,6 +19,6 @@ data class Utilisateur(
     @ColumnInfo(name = "Password")
     val password: String,
     @ColumnInfo(name = "Restaurants")
-    val restaurants: List<Result>
+    val restaurants: List<Restaurant>
 
 )
