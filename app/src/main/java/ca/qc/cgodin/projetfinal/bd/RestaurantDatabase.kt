@@ -5,16 +5,18 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
+import ca.qc.cgodin.projetfinal.Utilisateur
 import ca.qc.cgodin.projetfinal.models.Restaurant
 
 @Database(
-    entities = [Restaurant::class],
-    version = 1
+    entities = [Restaurant::class, Utilisateur::class],
+    version = 1,exportSchema = false
 )
 @TypeConverters(Converters::class)
 abstract class RestaurantDatabase: RoomDatabase() {
 
     abstract fun getRestaurantDao(): RestaurantDao
+    abstract fun getUtilisateurDao(): UtilisateurDao
 
     companion object {
         @Volatile

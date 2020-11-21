@@ -20,10 +20,10 @@ class InscriptionActivity : AppCompatActivity() {
         val username= findViewById<EditText>(R.id.username)
         val password1= findViewById<EditText>(R.id.password)
         val password2= findViewById<EditText>(R.id.confirm_password)
-        val register= findViewById(R.id.btnCreerCompte) as Button
+      /*  val register= findViewById(R.id.btnCreerCompte) as Button
         register.setOnClickListener{
             Toast.makeText(this, "email "+email.text+"username "+username.text+"password1 "+password1.text+"password2 "+password2.text, Toast.LENGTH_SHORT).show()
-        }
+        }*/
 
 
 

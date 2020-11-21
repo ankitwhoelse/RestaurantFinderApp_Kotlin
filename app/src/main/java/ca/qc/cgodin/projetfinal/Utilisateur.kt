@@ -4,10 +4,10 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import ca.qc.cgodin.projetfinal.models.Restaurant
+
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
-
-@Entity(tableName = "Users_table")
+@Entity(tableName = "Utilisateurs")
 data class Utilisateur(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name="id")
