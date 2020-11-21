@@ -2,6 +2,10 @@ package ca.qc.cgodin.projetfinal.bd
 
 import androidx.room.TypeConverter
 import ca.qc.cgodin.projetfinal.models.*
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import java.lang.reflect.Type
+
 
 class Converters {
 
@@ -32,8 +36,8 @@ class Converters {
                 viewport.southwest.lat.toString() +";"+ viewport.southwest.lng.toString()
     }
     @TypeConverter
-    fun toViewport(lat1: Double, lng1:Double, lat2:Double, lng2: Double): Viewport {
-        return Viewport(Northeast(lat1,lng1), Southwest(lat2,lng2))
+    fun toViewport(lat1: Double, lng1: Double, lat2: Double, lng2: Double): Viewport {
+        return Viewport(Northeast(lat1, lng1), Southwest(lat2, lng2))
     }
 
         // NORTHEAST
@@ -86,4 +90,23 @@ class Converters {
         return PlusCode(compoundCode, globalCode)
     }
 
+    @TypeConverter // note this annotation
+    fun fromListeRestaurant(restaurants: List<Restaurant?>?): String? {
+        if (restaurants == null) {
+            return null
+        }
+        val gson = Gson()
+        val type: Type = object : TypeToken<List<Restaurant?>?>() {}.type
+        return gson.toJson(restaurants, type)
+    }
+
+    @TypeConverter // note this annotation
+    fun toListeRestaurant(restaurantString: String?): List<Restaurant>? {
+        if (restaurantString == null) {
+            return null
+        }
+        val gson = Gson()
+        val type: Type = object : TypeToken<List<Restaurant?>?>() {}.type
+        return gson.fromJson<List<Restaurant>>(restaurantString, type)
+    }
 }
