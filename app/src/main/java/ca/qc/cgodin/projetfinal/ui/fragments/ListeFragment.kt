@@ -1,18 +1,19 @@
 package ca.qc.cgodin.projetfinal.ui.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import ca.qc.cgodin.projetfinal.R
+import ca.qc.cgodin.projetfinal.ui.MainActivity
+import ca.qc.cgodin.projetfinal.ui.RestaurantViewModel
 
-class ListeFragment : Fragment() {
+class ListeFragment : Fragment(R.layout.fragment_liste) {
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_liste, container, false)
+    lateinit var viewModel: RestaurantViewModel
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        viewModel = (activity as MainActivity).viewModel
     }
-
 }

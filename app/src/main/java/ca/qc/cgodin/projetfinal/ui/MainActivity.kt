@@ -8,9 +8,12 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import ca.qc.cgodin.projetfinal.R
+import ca.qc.cgodin.projetfinal.bd.RestaurantDatabase
+import ca.qc.cgodin.projetfinal.repository.RestaurantRepository
 import ca.qc.cgodin.projetfinal.ui.fragments.MapsFragment
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
@@ -19,14 +22,19 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    public lateinit var fusedLocationClient: FusedLocationProviderClient
+    lateinit var  viewModel: RestaurantViewModel
+
+
+    lateinit var fusedLocationClient: FusedLocationProviderClient
     lateinit var mapsFragment: MapsFragment
-    public var myLongitude: Double = 0.0
-    public var myLatitude: Double = 0.0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val restaurantRepository = RestaurantRepository(RestaurantDatabase(this))
+        val viewModelProviderFactory = RestaurantViewModelProviderFactory(restaurantRepository)
+        viewModel = ViewModelProvider(this, viewModelProviderFactory).get(RestaurantViewModel::class.java)
 
         bottomNavigationView.setupWithNavController(navHostFragment.findNavController())
 

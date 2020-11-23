@@ -16,7 +16,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 
-class MapsFragment : Fragment(){
+class MapsFragment : Fragment(R.layout.fragment_maps){
 
     public var myLongitude: Double =
         MainActivity.myLongitude
@@ -38,15 +38,6 @@ class MapsFragment : Fragment(){
         Log.i("test", "Current position(GG): $myLatitude/$myLongitude")
         googleMap.addMarker(MarkerOptions().position(myLocation).title("Vous etes ici"))
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(myLocation, 15f))
-    }
-
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_maps, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
